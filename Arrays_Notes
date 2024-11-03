@@ -1,0 +1,55 @@
+Agenda
+
+1. Definition of Array
+2. Properties, Advantage and Disadvantage of Array
+
+Arrays
+
+- An array is a collection of data belonging to the same datatype and category, stored in contiguous memory locations.
+- Indexing of arrays in C++/Java always starts from 0 and ends at one less than the size of the array.
+- The arrays having more than one dimension are known as multidimensional arrays.
+- The size of the array remains fixed once declared.
+
+Need of Arrays
+
+Multiple variables are required to store multiple values which may belong to a similar category and may have the same datatype.
+The use of many variables creates a lot of confusion and increases the program's length.
+The addresses of the different variables are also far apart, and there is no connection between the addresses of the two variables.
+Therefore, arrays come into the picture to use a single variable for different values belonging to the same category and datatype.
+
+Declaration of Array
+
+                dataType[] arrayName = new dataType[arraySize]; // int[] numbers = new int[5];
+
+                        OR
+                DECLARING A ARRAY LITERAL
+                dataType[] arrayName = new dataType[] {element1, element2,......elementArraySize};
+                // int[] intArray = new int[]{ 1,2,3,4,5,6,7,8,9,10 };
+                    OR int[] nums = {1,2,3};
+
+
+
+Accessing Array Elements
+
+                arrayName[index]; // arrayName[1];
+
+
+
+Advantages of an Array
+
+- Elements of an array can be accessed in O(1) time.
+- Minimizes the length of the code by putting values of multiple variables into a single array.
+- Updation of array elements is done in constant time.
+- Arrays can be easily traversed using a single loop.
+- The memory of array elements are very close to one another, and therefore, the cache can easily access them from the CPU.
+- Managing and sorting array elements requires fewer lines of code.
+
+
+Disadvantages of an Array
+
+- The size of an array can not be increased or decreased once defined during declaration. The use of arrays is not suitable when size is not defined earlier.
+- Arrays are homogeneous. All the elements of an array should belong to the same datatype.
+- The process of insertion and deletion of elements in arrays is costly. This is because of enhanced complications in traversing to the point of insertion and deletion and shifting of array elements. New memory allocation creates the process of insertion more complex.
+- Garbage value is thrown while accessing any index out of range. Arrays in C++ do not throw index-bound errors during compile time.
+
+
