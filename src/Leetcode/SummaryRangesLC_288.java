@@ -68,6 +68,7 @@ public class SummaryRangesLC_288 {
         int i = 0;
 
         while(i<nums.length) {
+
             int start = nums[i];
 
             while(i+1 < nums.length && nums[i]+1 == nums[i+1])
